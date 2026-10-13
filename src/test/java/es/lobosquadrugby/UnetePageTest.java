@@ -36,10 +36,7 @@ class UnetePageTest {
         unetePage.abrir();
 
         new WebDriverWait(driver, Duration.ofSeconds(15))
-            .until(d -> !d.getCurrentUrl().isEmpty());
-
-        new WebDriverWait(driver, Duration.ofSeconds(15))
-            .until(d -> unetePage.obterFormulario().isDisplayed());
+        .until(d -> unetePage.obterFormulario().isDisplayed());
     }
 
     @Test
