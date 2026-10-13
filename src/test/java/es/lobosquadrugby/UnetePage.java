@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public class UnetePage {
 
+    private static final String URL_UNETE = "https://lobos-quad-rugby.vercel.app/unete";
     private final WebDriver driver;
 
     private final By fullName = By.id("fullName");
@@ -27,9 +28,7 @@ public class UnetePage {
     }
 
     public void abrir() {
-        driver.get(
-            "https://lobos-quad-rugby.vercel.app/unete"
-        );
+        driver.get(URL_UNETE);
     }
 
     public WebElement obterCampoNome() {
